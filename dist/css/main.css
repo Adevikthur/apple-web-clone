@@ -55,13 +55,13 @@ body {
 }
 .h--5 {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28px;
   margin: 0;
 }
 .h--6 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 24px;
   margin: 0;
 }
@@ -243,7 +243,7 @@ body {
           backdrop-filter: blur(32px);
   display: flex;
   flex-direction: row;
-  padding: 4px 24px;
+  padding: 0px 24px;
   justify-content: center;
   color: var(--grey);
   background-color: rgba(0, 0, 0, 0.7);
@@ -277,6 +277,84 @@ body {
   fill: var(--grey);
   width: 16px;
   height: auto;
+}
+
+.homepage-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 3fr);
+  padding: 0 0 32px 0;
+  gap: 16px;
+  width: 100%;
+  overflow: hidden;
+}
+.homepage-grid__grid-1 {
+  justify-content: center;
+  display: flex;
+  padding: 40px;
+  color: white;
+  height: 80vh;
+  width: 100%;
+  background-image: url(/media/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homepage-grid__grid-1 .copy-wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+.homepage-grid__grid-1 .copy-wrapper__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 16px;
+}
+.homepage-grid__grid-1 .copy-wrapper__text p {
+  font-size: 24px;
+}
+.homepage-grid__grid-1 .copy-wrapper__text h1 {
+  font-size: 56px;
+}
+.homepage-grid__grid-1 .copy-wrapper__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  font-size: 20px;
+}
+.homepage-grid__grid-2 {
+  justify-content: center;
+  display: flex;
+  padding: 32px;
+  color: white;
+  height: 80vh;
+  width: 100%;
+  background-image: url(/media/hero_ipad_air__enn6321t3tkm_largetall.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.homepage-grid__grid-2 .copy-wrapper {
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.homepage-grid__grid-2 .copy-wrapper__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 8px;
+}
+.homepage-grid__grid-2 .copy-wrapper__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
 }
 
 .gradient {
