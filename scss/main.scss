@@ -180,6 +180,10 @@ body {
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(32px);
     display: flex;
     flex-direction: row;
     padding: 4px 24px;
@@ -193,20 +197,31 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
-        margin: 0;
+        gap: 24px;
         width: auto;
+        margin: 0;
+        justify-self: stretch;
         list-style: none;
+        font-size: 12px;
 
-        svg {
-            color: var(--grey);
-            fill: var(--grey);
+        li {
+            align-items: center;
+            margin: 0;
 
             &:hover {
                 color: var(--white);
                 fill: var(--white);
                 cursor: pointer;
             }
+        }
+
+        svg {
+            align-items: center;
+justify-items: center;
+            color: var(--grey);
+            fill: var(--grey);
+            width: 16px;
+            height: auto;
         }
     }
 
