@@ -27,6 +27,7 @@ body {
   color: var(--off-black);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .h--1 {
@@ -43,7 +44,7 @@ body {
 }
 .h--3 {
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 40px;
   margin: 0;
 }
@@ -282,7 +283,7 @@ body {
 .homepage-grid {
   display: grid;
   grid-template-columns: repeat(1, 3fr);
-  padding: 0 0 32px 0;
+  padding: 0;
   gap: 16px;
   width: 100%;
   overflow: hidden;
@@ -379,4 +380,83 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: auto;
+}
+.product-grid__item-1, .product-grid__item-2, .product-grid__item-3, .product-grid__item-4, .product-grid__item-5, .product-grid__item-6 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  color: var(--white);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-grid__item-1 .copy-wrapper, .product-grid__item-2 .copy-wrapper, .product-grid__item-3 .copy-wrapper, .product-grid__item-4 .copy-wrapper, .product-grid__item-5 .copy-wrapper, .product-grid__item-6 .copy-wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+.product-grid__item-1 .copy-wrapper__text, .product-grid__item-2 .copy-wrapper__text, .product-grid__item-3 .copy-wrapper__text, .product-grid__item-4 .copy-wrapper__text, .product-grid__item-5 .copy-wrapper__text, .product-grid__item-6 .copy-wrapper__text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 8px;
+}
+.product-grid__item-1 .copy-wrapper__text img, .product-grid__item-2 .copy-wrapper__text img, .product-grid__item-3 .copy-wrapper__text img, .product-grid__item-4 .copy-wrapper__text img, .product-grid__item-5 .copy-wrapper__text img, .product-grid__item-6 .copy-wrapper__text img {
+  width: 140px;
+}
+.product-grid__item-1 .copy-wrapper__text h3, .product-grid__item-2 .copy-wrapper__text h3, .product-grid__item-3 .copy-wrapper__text h3, .product-grid__item-4 .copy-wrapper__text h3, .product-grid__item-5 .copy-wrapper__text h3, .product-grid__item-6 .copy-wrapper__text h3 {
+  font-weight: 700;
+}
+.product-grid__item-1 .copy-wrapper__text p, .product-grid__item-2 .copy-wrapper__text p, .product-grid__item-3 .copy-wrapper__text p, .product-grid__item-4 .copy-wrapper__text p, .product-grid__item-5 .copy-wrapper__text p, .product-grid__item-6 .copy-wrapper__text p {
+  line-height: 20px;
+}
+.product-grid__item-1 .copy-wrapper__cta, .product-grid__item-2 .copy-wrapper__cta, .product-grid__item-3 .copy-wrapper__cta, .product-grid__item-4 .copy-wrapper__cta, .product-grid__item-5 .copy-wrapper__cta, .product-grid__item-6 .copy-wrapper__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-size: 14px;
+}
+.product-grid__item-1, .product-grid__item-5, .product-grid__item-6 {
+  color: var(--black);
+}
+.product-grid__item-2, .product-grid__item-3, .product-grid__item-4 {
+  color: var(--white);
+}
+.product-grid__item-1, .product-grid__item-2, .product-grid__item-5, .product-grid__item-6 {
+  justify-content: flex-start;
+}
+.product-grid__item-3, .product-grid__item-4 {
+  justify-content: flex-end;
+}
+.product-grid__item-1 {
+  background-image: url(/media/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+}
+.product-grid__item-2 {
+  background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
+}
+.product-grid__item-3 {
+  background-image: url(/media/promo_airpods_pro_2_avail__vkitqi3okwie_large.jpg);
+}
+.product-grid__item-4 {
+  background-image: url(/media/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+}
+.product-grid__item-5 {
+  background-image: url(/media/promo_macbook_air_m3__e43jegok3wuq_large.jpg);
+}
+.product-grid__item-6 {
+  background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
 }/*# sourceMappingURL=main.css.map */

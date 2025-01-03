@@ -27,6 +27,7 @@ body {
     color: var(--off-black);
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 // Typography mixin
@@ -48,7 +49,7 @@ body {
     }
 
     &--3 {
-        @include text-style(32px, 600, 40px);
+        @include text-style(32px, 700, 40px);
     }
 
     &--4 {
@@ -138,11 +139,15 @@ body {
     &--big {
         padding: 12px 32px;
         font-size: 16px;
+
+
     }
 
     &--small {
         padding: 8px 16px;
         font-size: 12px;
+
+
     }
 
     // Primary Buttons
@@ -231,7 +236,7 @@ body {
 .homepage-grid {
     display: grid;
     grid-template-columns: repeat(1, 3fr);
-    padding: 0 0 32px 0;
+    padding: 0;
     gap: 16px;
     width: 100%;
     overflow: hidden;
@@ -303,9 +308,11 @@ body {
     &__grid-3 {
         background-image: url(/media/hero_ipad_air__enn6321t3tkm_largetall.jpg);
         color: var(--black);
-img{
-    width: 200px;
-}
+
+        img {
+            width: 200px;
+        }
+
         .copy-wrapper {
             display: flex;
             text-align: center;
@@ -317,10 +324,11 @@ img{
 
             &-top {
                 display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                    gap: 16px;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 16px;
+
                 &__text {
                     display: flex;
                     flex-direction: column;
@@ -345,6 +353,7 @@ img{
 
                 }
             }
+
             .gradient {
                 font-weight: 700;
                 width: fit-content;
@@ -353,8 +362,122 @@ img{
                 color: transparent;
             }
         }
-       
+
     }
 
 }
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: auto;
+
+    &__item-1,
+    &__item-2,
+    &__item-3,
+    &__item-4,
+    &__item-5,
+    &__item-6 {
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        padding: 32px;
+        color: var(--white);
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+
+
+        .copy-wrapper {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 16px;
+
+
+            &__text {
+                img {
+                    width: 140px;
+                }
+
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                gap: 8px;
+
+
+
+                h3 {
+                    font-weight: 700;
+                }
+
+                p {
+                    line-height: 20px;
+                }
+            }
+
+            &__cta {
+                display: flex;
+                flex-direction: row;
+                gap: 12px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__item-1,
+    &__item-5,
+    &__item-6 {
+        color: var(--black);
+    }
+
+    &__item-2,
+    &__item-3,
+    &__item-4 {
+        color: var(--white);
+    }
+
+    &__item-1,
+    &__item-2,
+    &__item-5,
+    &__item-6 {
+        justify-content: flex-start;
+    }
+
+    &__item-3,
+    &__item-4 {
+        justify-content: flex-end;
+    }
+
+    &__item-1 {
+        background-image: url(/media/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+    }
+
+    &__item-2 {
+        background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
+    }
+
+    &__item-3 {
+        background-image: url(/media/promo_airpods_pro_2_avail__vkitqi3okwie_large.jpg);
+    }
+
+    &__item-4 {
+        background-image: url(/media/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+    }
+
+    &__item-5 {
+        background-image: url(/media/promo_macbook_air_m3__e43jegok3wuq_large.jpg);
+    }
+
+    &__item-6 {
+        background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    }
+}
