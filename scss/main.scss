@@ -159,11 +159,11 @@ body {
     // Secondary Buttons
     &--secondary {
         &--fill {
-            @include btn-style(var(--white), var(--black), var(--white), var(--off-white), var(--black));
+            @include btn-style(var(--grey), var(--black), var(--white), var(--white), var(--black));
         }
 
         &--outline {
-            @include btn-style(transparent, var(--black), var(--black), var(--white), var(--black));
+            @include btn-style(transparent, var(--white), var(--white), var(--white), var(--black));
         }
     }
 
@@ -188,7 +188,7 @@ body {
     flex-direction: row;
     padding: 0px 24px;
     justify-content: center;
-    color: var(--grey);
+    color: var(--border-grey);
     background-color: rgba($color: #000000, $alpha: 0.7);
     gap: 24px;
 
@@ -236,14 +236,15 @@ body {
     width: 100%;
     overflow: hidden;
 
-    &__grid-1 {
+    &__grid-1,
+    &__grid-2,
+    &__grid-3 {
         justify-content: center;
         display: flex;
-        padding: 40px;
-        color: white;
+        padding: 64px 0px 64px 0px;
+        color: var(--white);
         height: 80vh;
         width: 100%;
-        background-image: url(/media/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -262,10 +263,11 @@ body {
                 text-align: center;
                 gap: 16px;
 
-                p{
+                p {
                     font-size: 24px;
                 }
-                h1{
+
+                h1 {
                     font-size: 56px;
                 }
             }
@@ -273,55 +275,86 @@ body {
             &__cta {
                 display: flex;
                 flex-direction: row;
-                gap: 24px;
+                gap: 16px;
                 font-size: 20px;
 
             }
         }
     }
 
+    &__grid-1 {
+        background-image: url(/media/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg);
+    }
+
     &__grid-2 {
-        justify-content: center;
-        display: flex;
-        padding: 32px;
-        color: white;
-        height: 80vh;
-        width: 100%;
+        background-image: url(/media/hero_iphone16_avail__euwzls69btea_largetall.jpg);
+
+        // .btn--secondary--outline {
+        //     color: var(--white);
+        //     border: var(--white) 1px solid;
+
+        //     &:hover {
+        //         color: var(--black);
+
+        //     }
+        // }
+    }
+
+    &__grid-3 {
         background-image: url(/media/hero_ipad_air__enn6321t3tkm_largetall.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
+        color: var(--black);
+img{
+    width: 200px;
+}
         .copy-wrapper {
-            width: max-content;
             display: flex;
+            text-align: center;
             align-items: center;
-            justify-content: center;
             flex-direction: column;
-            gap: 16px;
+            justify-self: stretch;
+            justify-content: space-between;
+            gap: 60px;
 
-            &__text {
+            &-top {
                 display: flex;
-                flex-direction: column;
-                text-align: center;
-                gap: 8px;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 16px;
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    gap: 16px;
+
+                    p {
+                        font-size: 24px;
+                    }
+
+                    h1 {
+                        font-size: 56px;
+                    }
+                }
+
+                &__cta {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    font-size: 20px;
+
+                }
             }
-
-            &__cta {
-                display: flex;
-                flex-direction: row;
-                gap: 80px;
-
+            .gradient {
+                font-weight: 700;
+                width: fit-content;
+                background: var(--apple-gradient);
+                background-clip: text;
+                color: transparent;
             }
         }
+       
     }
 
 }
 
-.gradient {
-    font-weight: 700;
-    width: fit-content;
-    background: var(--apple-gradient);
-    background-clip: text;
-    color: transparent;
-}
