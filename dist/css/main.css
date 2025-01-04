@@ -386,7 +386,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
   align-items: center;
-  padding: 16px;
+  padding: 16px 16px 0;
   gap: 16px;
   width: auto;
 }
@@ -459,4 +459,77 @@ body {
 }
 .product-grid__item-6 {
   background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
+}
+
+.scroll {
+  z-index: 999px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  padding: 16px;
+  scroll-padding: 0 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll__item-1, .scroll__item-2, .scroll__item-3, .scroll__item-4, .scroll__item-5, .scroll__item-6, .scroll__item-7, .scroll__item-8, .scroll__item-9, .scroll__item-10 {
+  color: var(--white);
+  flex: 0 0 80%;
+  scroll-snap-align: center;
+  height: 80vh;
+  flex-direction: column;
+  justify-self: stretch;
+  justify-items: left;
+  align-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.scroll__item-1 .copy-wrapper, .scroll__item-2 .copy-wrapper, .scroll__item-3 .copy-wrapper, .scroll__item-4 .copy-wrapper, .scroll__item-5 .copy-wrapper, .scroll__item-6 .copy-wrapper, .scroll__item-7 .copy-wrapper, .scroll__item-8 .copy-wrapper, .scroll__item-9 .copy-wrapper, .scroll__item-10 .copy-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  padding: 0 0 44px 44px;
+  font-size: 20px;
+}
+.scroll__item-1 .copy-wrapper p, .scroll__item-2 .copy-wrapper p, .scroll__item-3 .copy-wrapper p, .scroll__item-4 .copy-wrapper p, .scroll__item-5 .copy-wrapper p, .scroll__item-6 .copy-wrapper p, .scroll__item-7 .copy-wrapper p, .scroll__item-8 .copy-wrapper p, .scroll__item-9 .copy-wrapper p, .scroll__item-10 .copy-wrapper p {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.scroll__item-1 .copy-wrapper .btn, .scroll__item-2 .copy-wrapper .btn, .scroll__item-3 .copy-wrapper .btn, .scroll__item-4 .copy-wrapper .btn, .scroll__item-5 .copy-wrapper .btn, .scroll__item-6 .copy-wrapper .btn, .scroll__item-7 .copy-wrapper .btn, .scroll__item-8 .copy-wrapper .btn, .scroll__item-9 .copy-wrapper .btn, .scroll__item-10 .copy-wrapper .btn {
+  font-size: 16px;
+}
+.scroll__item-1 {
+  background-image: url(/media/1250x703_1.jpg);
+}
+.scroll__item-2 {
+  background-image: url(/media/1250x703_2.jpg);
+}
+.scroll__item-3 {
+  background-image: url(/media/1250x703_10.jpg);
+}
+.scroll__item-4 {
+  background-image: url(/media/1250x703_3.jpg);
+}
+.scroll__item-5 {
+  background-image: url(/media/1250x703_4.jpg);
+}
+.scroll__item-6 {
+  background-image: url(/media/1250x703_5.jpg);
+}
+.scroll__item-7 {
+  background-image: url(/media/1250x703_6.jpg);
+}
+.scroll__item-8 {
+  background-image: url(/media/1250x703_7.jpg);
+}
+.scroll__item-9 {
+  background-image: url(/media/1250x703_8.jpg);
+}
+.scroll__item-10 {
+  background-image: url(/media/1250x703_9.jpg);
 }/*# sourceMappingURL=main.css.map */
