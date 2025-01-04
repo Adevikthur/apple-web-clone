@@ -290,6 +290,7 @@ body {
 }
 .homepage-grid__grid-1, .homepage-grid__grid-2, .homepage-grid__grid-3 {
   justify-content: center;
+  justify-self: stretch;
   display: flex;
   padding: 64px 0px 64px 0px;
   color: var(--white);
@@ -304,19 +305,24 @@ body {
   text-align: center;
   align-items: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 8px;
 }
 .homepage-grid__grid-1 .copy-wrapper__text, .homepage-grid__grid-2 .copy-wrapper__text, .homepage-grid__grid-3 .copy-wrapper__text {
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap: 16px;
+  gap: 12px;
+  align-items: center;
 }
 .homepage-grid__grid-1 .copy-wrapper__text p, .homepage-grid__grid-2 .copy-wrapper__text p, .homepage-grid__grid-3 .copy-wrapper__text p {
-  font-size: 24px;
+  font-size: 16px;
 }
-.homepage-grid__grid-1 .copy-wrapper__text h1, .homepage-grid__grid-2 .copy-wrapper__text h1, .homepage-grid__grid-3 .copy-wrapper__text h1 {
-  font-size: 56px;
+.homepage-grid__grid-1 .copy-wrapper__text h3, .homepage-grid__grid-2 .copy-wrapper__text h3, .homepage-grid__grid-3 .copy-wrapper__text h3 {
+  font-weight: 500;
+  margin: 0;
+}
+.homepage-grid__grid-1 .copy-wrapper__text img, .homepage-grid__grid-2 .copy-wrapper__text img, .homepage-grid__grid-3 .copy-wrapper__text img {
+  width: 240px;
 }
 .homepage-grid__grid-1 .copy-wrapper__cta, .homepage-grid__grid-2 .copy-wrapper__cta, .homepage-grid__grid-3 .copy-wrapper__cta {
   display: flex;
@@ -325,19 +331,14 @@ body {
   font-size: 20px;
 }
 .homepage-grid__grid-1 {
-  background-image: url(/media/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg);
-}
-.homepage-grid__grid-2 {
-  background-image: url(/media/hero_iphone16_avail__euwzls69btea_largetall.jpg);
-}
-.homepage-grid__grid-3 {
-  background-image: url(/media/hero_ipad_air__enn6321t3tkm_largetall.jpg);
+  background-image: url(/media/hero_apple_fitness_plus_ny__f1liz5hdssey_large.jpg);
   color: var(--black);
+  align-items: flex-end;
 }
-.homepage-grid__grid-3 img {
+.homepage-grid__grid-1 img {
   width: 200px;
 }
-.homepage-grid__grid-3 .copy-wrapper {
+.homepage-grid__grid-1 .copy-wrapper {
   display: flex;
   text-align: center;
   align-items: center;
@@ -346,33 +347,31 @@ body {
   justify-content: space-between;
   gap: 60px;
 }
-.homepage-grid__grid-3 .copy-wrapper-top {
+.homepage-grid__grid-1 .copy-wrapper__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  gap: 16px;
-}
-.homepage-grid__grid-3 .copy-wrapper-top__text {
-  display: flex;
-  flex-direction: column;
+  gap: 12px;
   align-items: center;
-  text-align: center;
-  gap: 16px;
 }
-.homepage-grid__grid-3 .copy-wrapper-top__text p {
-  font-size: 24px;
+.homepage-grid__grid-1 .copy-wrapper__text p {
+  font-size: 16px;
+  color: var(--text-grey);
 }
-.homepage-grid__grid-3 .copy-wrapper-top__text h1 {
-  font-size: 56px;
+.homepage-grid__grid-1 .copy-wrapper__text h3 {
+  font-weight: 500;
+  margin: 0;
 }
-.homepage-grid__grid-3 .copy-wrapper-top__cta {
+.homepage-grid__grid-1 .copy-wrapper__text img {
+  width: 240px;
+}
+.homepage-grid__grid-1 .copy-wrapper__cta {
   display: flex;
   flex-direction: row;
   gap: 16px;
   font-size: 20px;
 }
-.homepage-grid__grid-3 .copy-wrapper .gradient {
+.homepage-grid__grid-1 .copy-wrapper .gradient {
   font-weight: 700;
   width: -moz-fit-content;
   width: fit-content;
@@ -380,6 +379,17 @@ body {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+.homepage-grid__grid-2 {
+  background-image: url(/media/hero_apple_watch_ny__c8f1tzaoa72a_large.jpg);
+  align-items: flex-end;
+  color: var(--black);
+}
+.homepage-grid__grid-2 .copy-wrapper p {
+  font-size: 24px;
+}
+.homepage-grid__grid-3 {
+  background-image: url(/media/hero_iphone16pro_avail__fnf0f9x70jiy_largetall.jpg);
 }
 
 .product-grid {
@@ -448,8 +458,96 @@ body {
 .product-grid__item-2 {
   background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
 }
+.product-grid__item-2 .copy-wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: stretch;
+  gap: 260px;
+  justify-content: space-between;
+}
+.product-grid__item-2 .copy-wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.product-grid__item-2 .copy-wrapper-top__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.product-grid__item-2 .copy-wrapper-top__text p {
+  font-size: 16px;
+}
+.product-grid__item-2 .copy-wrapper-top__text h1 {
+  font-size: 56px;
+}
+.product-grid__item-2 .copy-wrapper-top__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 20px;
+}
+.product-grid__item-2 .copy-wrapper .gradient {
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: var(--apple-gradient);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
 .product-grid__item-3 {
   background-image: url(/media/promo_airpods_pro_2_avail__vkitqi3okwie_large.jpg);
+}
+.product-grid__item-3 .copy-wrapper {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: stretch;
+  gap: 260px;
+  justify-content: space-between;
+}
+.product-grid__item-3 .copy-wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.product-grid__item-3 .copy-wrapper-top__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.product-grid__item-3 .copy-wrapper-top__text p {
+  font-size: 16px;
+}
+.product-grid__item-3 .copy-wrapper-top__text h1 {
+  font-size: 56px;
+}
+.product-grid__item-3 .copy-wrapper-top__cta {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  font-size: 20px;
+}
+.product-grid__item-3 .copy-wrapper .gradient {
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: var(--apple-gradient);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
 }
 .product-grid__item-4 {
   background-image: url(/media/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
