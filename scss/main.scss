@@ -400,7 +400,15 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        justify-content: flex-start;
 
+        img {
+            width: 160px;
+        }
+
+        .btn {
+            font-size: 14px;
+        }
 
 
         .copy-wrapper {
@@ -442,36 +450,25 @@ body {
         }
     }
 
-    &__item-1,
+    &__item-2,
     &__item-5,
     &__item-6 {
         color: var(--black);
     }
 
-    &__item-2,
+    &__item-1,
     &__item-3,
     &__item-4 {
         color: var(--white);
     }
 
-    &__item-1,
-    &__item-2,
-    &__item-5,
-    &__item-6 {
-        justify-content: flex-start;
-    }
-
-    &__item-3,
-    &__item-4 {
-        justify-content: flex-end;
-    }
 
     &__item-1 {
-        background-image: url(/media/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+        background-image: url(/media/promo_iphone16_avail__cl72dn7xdfv6_large.jpg);
     }
 
     &__item-2 {
-        background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
+        background-image: url(/media/hero_ipad_air__enn6321t3tkm_largetall.jpg);
 
         .copy-wrapper {
             display: flex;
@@ -479,7 +476,7 @@ body {
             align-items: center;
             flex-direction: column;
             justify-self: stretch;
-            gap: 260px;
+            gap: 280px;
             justify-content: space-between;
 
             &-top {
@@ -525,7 +522,7 @@ body {
     }
 
     &__item-3 {
-        background-image: url(/media/promo_airpods_pro_2_avail__vkitqi3okwie_large.jpg);
+        background-image: url(/media/promo_macbookpro_announce__gdf98j6tj2ie_large.jpg);
 
         .copy-wrapper {
             display: flex;
@@ -533,7 +530,7 @@ body {
             align-items: center;
             flex-direction: column;
             justify-self: stretch;
-            gap: 260px;
+            gap: 280px;
             justify-content: space-between;
 
             &-top {
@@ -551,7 +548,8 @@ body {
                     gap: 16px;
 
                     p {
-                        font-size: 16px;
+                        font-size: 20px;
+                        font-weight: 500;
                     }
 
                     h1 {
@@ -579,15 +577,15 @@ body {
     }
 
     &__item-4 {
-        background-image: url(/media/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+        background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
     }
 
     &__item-5 {
-        background-image: url(/media/promo_macbook_air_m3__e43jegok3wuq_large.jpg);
+        background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
     }
 
     &__item-6 {
-        background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
+        background-image: url(/media/promo_apple_card__5cm7draujpey_large.jpg);
     }
 }
 

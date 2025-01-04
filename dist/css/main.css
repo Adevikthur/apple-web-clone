@@ -410,6 +410,13 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  justify-content: flex-start;
+}
+.product-grid__item-1 img, .product-grid__item-2 img, .product-grid__item-3 img, .product-grid__item-4 img, .product-grid__item-5 img, .product-grid__item-6 img {
+  width: 160px;
+}
+.product-grid__item-1 .btn, .product-grid__item-2 .btn, .product-grid__item-3 .btn, .product-grid__item-4 .btn, .product-grid__item-5 .btn, .product-grid__item-6 .btn {
+  font-size: 14px;
 }
 .product-grid__item-1 .copy-wrapper, .product-grid__item-2 .copy-wrapper, .product-grid__item-3 .copy-wrapper, .product-grid__item-4 .copy-wrapper, .product-grid__item-5 .copy-wrapper, .product-grid__item-6 .copy-wrapper {
   display: flex;
@@ -440,23 +447,17 @@ body {
   gap: 12px;
   font-size: 14px;
 }
-.product-grid__item-1, .product-grid__item-5, .product-grid__item-6 {
+.product-grid__item-2, .product-grid__item-5, .product-grid__item-6 {
   color: var(--black);
 }
-.product-grid__item-2, .product-grid__item-3, .product-grid__item-4 {
+.product-grid__item-1, .product-grid__item-3, .product-grid__item-4 {
   color: var(--white);
 }
-.product-grid__item-1, .product-grid__item-2, .product-grid__item-5, .product-grid__item-6 {
-  justify-content: flex-start;
-}
-.product-grid__item-3, .product-grid__item-4 {
-  justify-content: flex-end;
-}
 .product-grid__item-1 {
-  background-image: url(/media/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+  background-image: url(/media/promo_iphone16_avail__cl72dn7xdfv6_large.jpg);
 }
 .product-grid__item-2 {
-  background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
+  background-image: url(/media/hero_ipad_air__enn6321t3tkm_largetall.jpg);
 }
 .product-grid__item-2 .copy-wrapper {
   display: flex;
@@ -464,7 +465,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-self: stretch;
-  gap: 260px;
+  gap: 280px;
   justify-content: space-between;
 }
 .product-grid__item-2 .copy-wrapper-top {
@@ -503,7 +504,7 @@ body {
   color: transparent;
 }
 .product-grid__item-3 {
-  background-image: url(/media/promo_airpods_pro_2_avail__vkitqi3okwie_large.jpg);
+  background-image: url(/media/promo_macbookpro_announce__gdf98j6tj2ie_large.jpg);
 }
 .product-grid__item-3 .copy-wrapper {
   display: flex;
@@ -511,7 +512,7 @@ body {
   align-items: center;
   flex-direction: column;
   justify-self: stretch;
-  gap: 260px;
+  gap: 280px;
   justify-content: space-between;
 }
 .product-grid__item-3 .copy-wrapper-top {
@@ -529,7 +530,8 @@ body {
   gap: 16px;
 }
 .product-grid__item-3 .copy-wrapper-top__text p {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .product-grid__item-3 .copy-wrapper-top__text h1 {
   font-size: 56px;
@@ -550,13 +552,13 @@ body {
   color: transparent;
 }
 .product-grid__item-4 {
-  background-image: url(/media/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+  background-image: url(/media/promo_apple_watch_ultra2_avail__dyawbjw9cowi_large.jpg);
 }
 .product-grid__item-5 {
-  background-image: url(/media/promo_macbook_air_m3__e43jegok3wuq_large.jpg);
+  background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
 }
 .product-grid__item-6 {
-  background-image: url(/media/promo_iphone_tradein__bugw15ka691e_large.jpg);
+  background-image: url(/media/promo_apple_card__5cm7draujpey_large.jpg);
 }
 
 .scroll {
