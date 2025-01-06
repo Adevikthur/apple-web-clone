@@ -28,6 +28,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .h--1 {
@@ -567,6 +572,7 @@ body {
   flex-direction: row;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   gap: 16px;
   padding: 16px;
   scroll-padding: 0 16px;
@@ -632,4 +638,38 @@ body {
 }
 .scroll__item-10 {
   background-image: url(/media/1250x703_9.jpg);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 12px;
+  padding: 24px 0;
+}
+.dots div {
+  width: 8px;
+  height: 8px;
+  border-radius: 400px;
+  background-color: var(--grey-2);
+  position: relative;
+}
+.dots div:active,
+.dots div :checked {
+  background-color: var(--text-grey);
+}
+.dots div:hover,
+.dots div :checked {
+  cursor: pointer;
+}
+.dots div a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  /* Make the link fill the entire dot */
+  text-indent: -9999px;
+  /* Hide link text if any */
 }/*# sourceMappingURL=main.css.map */
