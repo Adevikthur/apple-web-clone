@@ -677,4 +677,39 @@ body {
   /* Make the link fill the entire dot */
   text-indent: -9999px;
   /* Hide link text if any */
+}
+
+.last-scroll {
+  z-index: 999px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 16px 0;
+  scroll-padding: 0 16px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.last-scroll::-webkit-scrollbar {
+  display: none;
+}
+.last-scroll__item-1, .last-scroll__item-2, .last-scroll__item-3, .last-scroll__item-4, .last-scroll__item-5, .last-scroll__item-6 {
+  color: var(--white);
+  flex: 0 0 28%;
+  scroll-snap-align: center;
+  height: 30vh;
+  flex-direction: column;
+  justify-self: stretch;
+  justify-items: left;
+  align-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+.last-scroll__item-1 svg, .last-scroll__item-2 svg, .last-scroll__item-3 svg, .last-scroll__item-4 svg, .last-scroll__item-5 svg, .last-scroll__item-6 svg {
+  color: white;
+  fill: white;
+  width: 80px;
 }/*# sourceMappingURL=main.css.map */

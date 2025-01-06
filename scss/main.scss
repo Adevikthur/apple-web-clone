@@ -743,3 +743,46 @@ body {
         }
     }
 }
+
+.last-scroll {
+    z-index: 999px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    padding: 16px 0;
+    scroll-padding: 0 16px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &__item-1,
+    &__item-2,
+    &__item-3,
+    &__item-4,
+    &__item-5,
+    &__item-6 {
+        color: var(--white);
+        flex: 0 0 28%;
+        scroll-snap-align: center;
+        height: 30vh;
+        flex-direction: column;
+        justify-self: stretch;
+        justify-items: left;
+        align-content: flex-end;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #000;
+
+        svg{
+            color: white;
+            fill: white;
+            width: 80px;
+        }
+    }
+}
