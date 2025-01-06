@@ -708,6 +708,12 @@ body {
   background-repeat: no-repeat;
   background-color: #000;
 }
+.last-scroll__item-1 .text-holder, .last-scroll__item-2 .text-holder, .last-scroll__item-3 .text-holder, .last-scroll__item-4 .text-holder, .last-scroll__item-5 .text-holder, .last-scroll__item-6 .text-holder {
+  display: flex;
+  flex-direction: row;
+  justify-self: stretch;
+  justify-content: space-between;
+}
 .last-scroll__item-1 svg, .last-scroll__item-2 svg, .last-scroll__item-3 svg, .last-scroll__item-4 svg, .last-scroll__item-5 svg, .last-scroll__item-6 svg {
   color: white;
   fill: white;
