@@ -711,7 +711,7 @@ body {
     justify-content: center;
     flex-direction: row;
     gap: 12px;
-    padding: 24px 0;
+    padding: 16px 0;
 
     div {
         width: 8px;
@@ -766,6 +766,7 @@ body {
     &__item-4,
     &__item-5,
     &__item-6 {
+        position: relative;
         color: var(--white);
         flex: 0 0 28%;
         scroll-snap-align: center;
@@ -777,7 +778,7 @@ body {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #000;
+        background-color: var(--pill-grey);
     }
 
     &__item-1,
@@ -820,9 +821,60 @@ body {
     &__item-4 {
         background-image: url(/media/417x236_1.jpg);
     }
+
     &__item-6 {
         background-image: url(/media/strength_greg.jpg);
     }
 
-    
+    &__item-2,
+    &__item-5 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0px;
+
+        img {
+            flex: 0 50%;
+            border-radius: 20px;
+            padding: 8px 8px 8px 16px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 600;
+            text-align: left;
+        }
+
+        svg {
+            position: absolute;
+            width: 80px;
+            right: 24px;
+            bottom: 24px;
+
+        }
+
+        .text-holder {
+            width: 100%;
+            display: flex;
+            justify-self: stretch;
+            justify-content: space-between;
+            padding: 16px;
+
+
+
+
+        }
+    }
+
+    &__item-2{
+        color: var(--black);
+    }
+    &__item-5{
+        color: var(--white);
+
+        svg{
+            fill: var(--white);
+        }
+    }
+
 }
