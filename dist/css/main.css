@@ -708,14 +708,35 @@ body {
   background-repeat: no-repeat;
   background-color: #000;
 }
-.last-scroll__item-1 .text-holder, .last-scroll__item-2 .text-holder, .last-scroll__item-3 .text-holder, .last-scroll__item-4 .text-holder, .last-scroll__item-5 .text-holder, .last-scroll__item-6 .text-holder {
+.last-scroll__item-1 .text-holder, .last-scroll__item-3 .text-holder, .last-scroll__item-4 .text-holder, .last-scroll__item-6 .text-holder {
   display: flex;
   flex-direction: row;
   justify-self: stretch;
   justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Slight transparency for the background */
+  box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.1);
 }
-.last-scroll__item-1 svg, .last-scroll__item-2 svg, .last-scroll__item-3 svg, .last-scroll__item-4 svg, .last-scroll__item-5 svg, .last-scroll__item-6 svg {
+.last-scroll__item-1 .text-holder p, .last-scroll__item-3 .text-holder p, .last-scroll__item-4 .text-holder p, .last-scroll__item-6 .text-holder p {
+  margin: 0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.last-scroll__item-1 .text-holder svg, .last-scroll__item-3 .text-holder svg, .last-scroll__item-4 .text-holder svg, .last-scroll__item-6 .text-holder svg {
   color: white;
   fill: white;
-  width: 80px;
+  width: 72px;
+  height: auto;
+}
+.last-scroll__item-1 {
+  background-image: url(/media/417x2366.jpg);
+}
+.last-scroll__item-3 {
+  background-image: url(/media/417x2366_1.jpg);
+}
+.last-scroll__item-4 {
+  background-image: url(/media/417x236_1.jpg);
+}
+.last-scroll__item-6 {
+  background-image: url(/media/strength_greg.jpg);
 }/*# sourceMappingURL=main.css.map */
