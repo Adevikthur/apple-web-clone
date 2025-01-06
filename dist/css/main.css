@@ -31,10 +31,6 @@ body {
   scroll-behavior: smooth;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .h--1 {
   font-size: 48px;
   font-weight: 700;
@@ -252,7 +248,7 @@ html {
   padding: 0px 24px;
   justify-content: center;
   color: var(--border-grey);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   gap: 24px;
 }
 .header ul {
@@ -304,6 +300,9 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.homepage-grid__grid-1:hover, .homepage-grid__grid-2:hover, .homepage-grid__grid-3:hover {
+  cursor: pointer;
 }
 .homepage-grid__grid-1 .copy-wrapper, .homepage-grid__grid-2 .copy-wrapper, .homepage-grid__grid-3 .copy-wrapper {
   display: flex;
@@ -416,6 +415,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   justify-content: flex-start;
+}
+.product-grid__item-1:hover, .product-grid__item-2:hover, .product-grid__item-3:hover, .product-grid__item-4:hover, .product-grid__item-5:hover, .product-grid__item-6:hover {
+  cursor: pointer;
 }
 .product-grid__item-1 img, .product-grid__item-2 img, .product-grid__item-3 img, .product-grid__item-4 img, .product-grid__item-5 img, .product-grid__item-6 img {
   width: 160px;
@@ -594,6 +596,9 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.scroll__item-1:hover, .scroll__item-2:hover, .scroll__item-3:hover, .scroll__item-4:hover, .scroll__item-5:hover, .scroll__item-6:hover, .scroll__item-7:hover, .scroll__item-8:hover, .scroll__item-9:hover, .scroll__item-10:hover {
+  cursor: pointer;
 }
 .scroll__item-1 .copy-wrapper, .scroll__item-2 .copy-wrapper, .scroll__item-3 .copy-wrapper, .scroll__item-4 .copy-wrapper, .scroll__item-5 .copy-wrapper, .scroll__item-6 .copy-wrapper, .scroll__item-7 .copy-wrapper, .scroll__item-8 .copy-wrapper, .scroll__item-9 .copy-wrapper, .scroll__item-10 .copy-wrapper {
   display: flex;
