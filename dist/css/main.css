@@ -783,15 +783,69 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
+  align-items: left;
+  gap: 16px;
   padding: 24px 260px;
   background-color: var(--grey);
 }
-.footer .top {
+.footer__top {
+  text-align: left;
   font-size: 12px;
   color: var(--text-grey);
+  width: 100%;
+  text-wrap: 100%;
 }
-.footer .top ul {
+.footer__top ul {
+  width: 100%;
   list-style: none;
   line-height: 16px;
   gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+.footer__top ul li {
+  padding-left: 0;
+  text-indent: 0;
+}
+.footer__line {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--grey-2);
+}
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer__nav .column {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  flex-grow: 1; /* Allows the columns to grow equally */
+  flex-basis: 0; /* Ensures all columns start with equal width */
+  max-width: 100%;
+}
+.footer__nav .column__item {
+  padding-left: 0;
+  text-indent: 0;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav .column__item h6 {
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+  color: var(--bg-black);
+}
+.footer__nav .column__item li {
+  list-style: none;
+  font-size: 12px;
+  color: var(--text-grey);
+}
+.footer__nav .column__item li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--pill-grey);
 }/*# sourceMappingURL=main.css.map */
