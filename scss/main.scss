@@ -927,9 +927,11 @@ body {
             display: flex;
             flex-direction: column;
             gap: 0px;
-            flex-grow: 1; /* Allows the columns to grow equally */
-        flex-basis: 0; /* Ensures all columns start with equal width */
-        max-width: 100%;
+            flex-grow: 1;
+            /* Allows the columns to grow equally */
+            flex-basis: 0;
+            /* Ensures all columns start with equal width */
+            max-width: 100%;
 
             &__item {
                 padding-left: 0;
@@ -958,6 +960,79 @@ body {
                 }
 
             }
+        }
+    }
+
+    &__ways {
+        p {
+            font-size: 12px;
+            color: var(--text-grey);
+            text-decoration: none;
+
+            u {
+                color: var(--blue);
+
+                &:hover {
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-self: stretch;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 64px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        .center {
+            display: flex;
+            flex-direction: row;
+            gap: 12px;
+            align-items: center;
+
+            .line {
+                width: 0.7px;
+                height: 16px;
+                background-color: var(--grey-2);
+            }
+
+            p {
+                color: var(--pill-grey);
+                font-size: 12px;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: var(--pill-grey);
+                }
+            }
+        }
+
+        p {
+            color: var(--pill-grey);
+            font-size: 12px;
+        }
+
+        .left {
+            p:first-of-type {
+                font-size: 12px;
+                color: var(--text-grey);
+            }
+        }
+
+        .right {
+            position: absolute;
+            justify-self: stretch;
+            text-align: right;
+            right: 0;
         }
     }
 }
