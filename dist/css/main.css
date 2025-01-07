@@ -778,4 +778,20 @@ body {
 }
 .last-scroll__item-5 svg {
   fill: var(--white);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 260px;
+  background-color: var(--grey);
+}
+.footer .top {
+  font-size: 12px;
+  color: var(--text-grey);
+}
+.footer .top ul {
+  list-style: none;
+  line-height: 16px;
+  gap: 16px;
 }/*# sourceMappingURL=main.css.map */

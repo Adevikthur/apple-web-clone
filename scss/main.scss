@@ -866,15 +866,34 @@ body {
         }
     }
 
-    &__item-2{
+    &__item-2 {
         color: var(--black);
     }
-    &__item-5{
+
+    &__item-5 {
         color: var(--white);
 
-        svg{
+        svg {
             fill: var(--white);
         }
     }
 
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 24px 260px;
+    background-color: var(--grey);
+
+    .top {
+        font-size: 12px;
+        color: var(--text-grey);
+
+        ul {
+            list-style: none;
+            line-height: 16px;
+            gap: 16px;
+        }
+    }
 }
